@@ -15,7 +15,7 @@ install_path=/usr/local/share
 yum -y install wget
 wget https://$origin.com/senjianlu/one-click-scripts/raw/main/mirror/Shadowsocks/shadowsocks.tar.gz
 tar -zxvf shadowsocks.tar.gz
-mv shadowsocks /usr/local/share/
+mv shadowsocks $install_path
 
 # 下载启动服务的脚本
 wget https://$origin.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Shadowsocks%20%E5%AE%A2%E6%88%B7%E7%AB%AF/%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1/ssr
