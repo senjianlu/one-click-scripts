@@ -1,5 +1,5 @@
 #!/bin/bash
-# SSR 服务启动脚本
+# SS 服务启动脚本
 
 set -e
 if [ -z $EDITOR ];then
@@ -7,19 +7,20 @@ if [ -z $EDITOR ];then
 fi
 
 help() {
-    echo ShadowSocksR python client tool
+    echo Shadowsocks python client tool
     echo -e if you have not install ssr, please run visit https://github.com/senjianlu/one-click-scripts and get some help!
     echo Usage:
     echo -e "\t" ssr help
     echo -e "\t" ssr config : edit config.json
-    echo -e "\t" ssr uninstall : uninstall shadowsocksr client
+    echo -e "\t" ssr uninstall : uninstall shadowsocks client
     echo -e "\t" ssr start : start the shadowsocks service
     echo -e "\t" ssr stop : stop the shadowsocks service
     echo -e "\t" ssr log : cat the log of shadowsocks
 }
 
 # 默认安装路径
-install_path=/usr/local/share
+install_path=/usr/local/share/shadowsocks
+# 主要程序代码在：/usr/local/share/shadowsocks/shadowsocks 下
 
 if [ $# == 0 ];then
     help
