@@ -22,3 +22,5 @@
 # fi
 
 ssr help
+
+sed -i '$a 111 222' /etc/opt/ss5/ss5.passwd
