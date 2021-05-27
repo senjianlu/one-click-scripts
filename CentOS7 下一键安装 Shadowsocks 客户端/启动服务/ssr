@@ -1,0 +1,57 @@
+#!/bin/bash
+# SSR 服务启动脚本
+
+set -e
+if [ -z $EDITOR ];then
+    EDITOR=vi
+fi
+
+help() {
+    echo ShadowSocksR python client tool
+    echo -e if you have not install ssr, please run \"ssr install\"
+    echo Usage:
+    echo -e "\t" ssr help
+    echo -e "\t" ssr config : edit config.json
+    echo -e "\t" ssr uninstall : uninstall shadowsocksr client
+    echo -e "\t" ssr start : start the shadowsocks service
+    echo -e "\t" ssr stop : stop the shadowsocks service
+    echo -e "\t" ssr log : cat the log of shadowsocks
+}
+
+# 默认安装路径
+install_path=/usr/local/share/shadowsocksr
+
+if [ $# == 0 ];then
+    help
+    
+elif [ $1 == "help" ];then
+    help
+    
+elif [ $1 == "uninstall" ];then
+    echo "Danger! are you to remove $install_path forever?(y/N)"
+    read doit
+    if [ $doit == 'y' ];then
+        sudo rm -rvf $install_path
+    fi
+    
+elif [ $1 == "config" ];then
+    sudo $EDITOR $install_path/config.json
+    cd $install_path/shadowsocks/
+    sudo python local.py -d stop
+    sudo python local.py -d start
+    
+elif [ $1 == "start" ];then
+    cd $install_path/shadowsocks/
+    sudo python local.py -d start
+    
+elif [ $1 == "stop" ];then
+    cd $install_path/shadowsocks/
+    sudo python local.py -d stop
+    
+elif [ $1 == "log" ];then
+    tail -f /var/log/shadowsocks.log
+    
+elif [ $1 == "shell" ];then
+    cd $install_path/shadowsocks/
+    sudo python local.py $@
+fi
