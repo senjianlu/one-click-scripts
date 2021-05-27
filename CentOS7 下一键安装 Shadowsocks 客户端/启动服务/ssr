@@ -8,7 +8,7 @@ fi
 
 help() {
     echo ShadowSocksR python client tool
-    echo -e if you have not install ssr, please run \"ssr install\"
+    echo -e if you have not install ssr, please run visit https://github.com/senjianlu/one-click-scripts and get some help!
     echo Usage:
     echo -e "\t" ssr help
     echo -e "\t" ssr config : edit config.json
@@ -19,7 +19,7 @@ help() {
 }
 
 # 默认安装路径
-install_path=/usr/local/share/shadowsocksr
+install_path=/usr/local/share
 
 if [ $# == 0 ];then
     help

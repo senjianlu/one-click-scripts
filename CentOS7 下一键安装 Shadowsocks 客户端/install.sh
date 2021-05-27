@@ -13,11 +13,12 @@ install_path=/usr/local/share/shadowsocksr
 
 # 切换为我的压缩包以保证源仓库修改不会产生影响
 yum -y install wget
-wget https://$origin.com/senjianlu/one-click-scripts/raw/main/mirror/ShadowsocksR/shadowsocksr.tgz
-tar -xvf shadowsocks.tar /usr/local/share/shadowsocksr
+wget https://$origin.com/senjianlu/one-click-scripts/raw/main/mirror/ShadowsocksR/shadowsocksr.tgz.gz
+tar -zxvf shadowsocksr.tar.gz
+mv shadowsocksr /usr/local/share/
 
 # 下载启动服务的脚本
-wget 
+wget https://$origin.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Shadowsocks%20%E5%AE%A2%E6%88%B7%E7%AB%AF/%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1/ssr
 mv ssr /usr/local/bin
 chmod +x /usr/local/bin/ssr
 
