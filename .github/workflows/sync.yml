@@ -30,8 +30,14 @@ jobs:
         uses: Yikun/hub-mirror-action@v1.1
         with:
           # The private SSH key which is used to to push code in destination hub.
+          dst_key: ${{ secrets.SSH_PRIVATE_KEY }}
           # The app token which is used to  create repo in destination hub.
+          dst_token: ${{ secrets.GITEE_TOKEN }}
           # Destination name. Such as `gitee/kunpengcompute`.
           dst: gitee/senjianlu
           # Source name. Such as `github/kunpengcompute`.
           src: github/senjianlu
+          # The account type. Such as org, user.
+          account_type: user
+          # Low priority, the white list of mirror repo. like 'repo1,repo2,repo3'
+          white_list: "one-click-scripts"
