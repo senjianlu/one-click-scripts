@@ -5,7 +5,7 @@
 #              and stopping ss5
 #
 
-export SS5_SOCKS_PORT=15055
+export SS5_SOCKS_PORT=5555
 export SS5_SOCKS_USER=root
 
 OS=`uname -s`
