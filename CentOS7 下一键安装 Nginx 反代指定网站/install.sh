@@ -25,9 +25,9 @@ yum -y install nginx
 # 配置 Nginx
 yum -y install wget
 wget https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Nginx%20%E5%8F%8D%E4%BB%A3%E6%8C%87%E5%AE%9A%E7%BD%91%E7%AB%99/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/nginx.conf -O nginx.conf
-sed -i "45c         listen       $nginx_reverse_port;" nginx.conf
-sed -i "46c         server_name  $nginx_reverse_domain_my;" nginx.conf
-sed -i "54c             proxy_pass $nginx_reverse_domain_it;" nginx.conf
+sed -i "45c \ \ \ \ \ \ \ \ listen       $nginx_reverse_port;" nginx.conf
+sed -i "46c \ \ \ \ \ \ \ \ server_name  $nginx_reverse_domain_my;" nginx.conf
+sed -i "54c \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ proxy_pass $nginx_reverse_domain_it;" nginx.conf
 mv -f nginx.conf /etc/nginx/nginx.conf
 chmod 777 /etc/nginx/nginx.conf
 nginx -s reload
