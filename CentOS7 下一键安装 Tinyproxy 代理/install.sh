@@ -17,24 +17,30 @@ opened_port=$(curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/Cen
 # 默认安装路径
 install_path=/usr/local/share
 
+# 安装环境包
+yum -y install openssl-devel
+yum -y install gcc
+yum -y install pam-devel
+yum -y install openldap-devel
 # 卸载旧版本 TinyProxy
 # yum -y erase tinyproxy
-wget https://github.com/tinyproxy/tinyproxy/releases/download/1.11.0-rc1/tinyproxy-1.11.0-rc1.tar.gz
+yum -y install wget
+wget https://$origin.com/senjianlu/one-click-scripts/raw/main/mirror/Tinyproxy/tinyproxy-1.11.0-rc1.tar.gz
 tar -zxvf tinyproxy-1.11.0-rc1.tar.gz
 mv tinyproxy-1.11.0-rc1 $install_path
 cd $install_path/tinyproxy-1.11.0-rc1
 ./configure && make && make install
 
 # 配置 Tinyproxy
-mkdir /usr/local/share/config
-wget 
-mv tinyproxy.conf /usr/local/share/config
-sed -i "23c Port $tinyproxy_port" /usr/local/share/config/tinyproxy.conf
-sed -i "206c BasicAuth $tinyproxy_username $tinyproxy_password" /usr/local/share/config/tinyproxy.conf
+mkdir $install_path/config
+wget https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Tinyproxy%20%E4%BB%A3%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/tinyproxy.conf -O tinyproxy.conf
+mv tinyproxy.conf $install_path/config
+sed -i "23c Port $tinyproxy_port" $install_path/config/tinyproxy.conf
+sed -i "206c BasicAuth $tinyproxy_username $tinyproxy_password" $install_path/config/tinyproxy.conf
 
 # 开机自动启动
-echo "@reboot tinyproxy -c /usr/local/share/config/tinyproxy.conf -d" >> /var/spool/cron/root
+echo "@reboot /usr/local/bin/tinyproxy -c $install_path/config/tinyproxy.conf" >> /var/spool/cron/root
 service crond restart
 
 # 启动 Tinyproxy 服务
-tinyproxy -c /usr/local/share/config/tinyproxy.conf -d
+/usr/local/bin/tinyproxy -c $install_path/config/tinyproxy.conf
