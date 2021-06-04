@@ -50,7 +50,7 @@ sed -i "1c $ss5_username $ss5_password" /etc/opt/ss5/ss5.passwd
 sed -i '18c  [[ ${NETWORKING} = "no" ]] && exit 0' /etc/rc.d/init.d/ss5
 # 更改监听端口
 sed -i "N;8iexport SS5_SOCKS_PORT=$ss5_port" /etc/rc.d/init.d/ss5
-sed -i 'N;7aexport SS5_SOCKS_USER=root' /etc/rc.d/init.d/ss5
+sed -i 'N;8iexport SS5_SOCKS_USER=root' /etc/rc.d/init.d/ss5
 
 # 开启 SOCKS5 的开机自启动服务
 chmod u+x /etc/rc.d/init.d/ss5
