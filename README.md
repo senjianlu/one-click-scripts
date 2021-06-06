@@ -25,3 +25,9 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Tinyproxy%20%E4%BB%A3%E7%90%86/install.sh | bash -s $tinyproxy_port $tinyproxy_username $tinyproxy_password
 ```
+
+>测试代理
+```bash
+curl -x http://111:222@173.107.210.99:333 http://ip-api.com/json/?lang=zh-CN  
+curl -x socks5://444:555@173.107.210.99:666 http://ip-api.com/json/?lang=zh-CN  
+```
