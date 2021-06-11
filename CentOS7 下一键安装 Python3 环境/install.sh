@@ -20,9 +20,16 @@ yum -y install libffi libffi-devel
 yum -y install zlib* libffi-devel
 yum install gcc* glien* -y
 # 下载、解压和安装
-yum -y install wget
-wget https://$origin.com/senjianlu/one-click-scripts/raw/main/mirror/Python/3/Python-$version.tgz
-tar -xvf Python-$version.tgz && mkdir /usr/local/python3 && cd Python-$version
+if [[ ${origin} == *"github"* ]];
+then
+    yum -y install wget
+    wget https://github.com/senjianlu/one-click-scripts/raw/main/mirror/Python/3/Python-$version.tgz
+else
+    # todo...
+
+tar -xvf Python-$version.tgz
+mkdir /usr/local/python3
+cd Python-$version
 ./configure --prefix=/usr/local/python3 && make && make install
 # 设置软连接
 ln -f /usr/local/python3/bin/python3.8 /usr/bin/python3
