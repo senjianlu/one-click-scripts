@@ -27,6 +27,7 @@ then
     wget $python_tgz_url
 else
     curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%8B%E8%BD%BD%20Gitee%20%E8%B6%85%E8%BF%87%201m%20%E5%A4%A7%E5%B0%8F%E7%9A%84%E6%96%87%E4%BB%B6/download.sh | bash -s $python_tgz_url
+fi
 tar -xvf Python-$version.tgz
 mkdir /usr/local/python3
 cd Python-$version
