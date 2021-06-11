@@ -12,8 +12,13 @@ set -e
 install_path=/usr/local/share
 
 # 切换为我的压缩包以保证源仓库修改不会产生影响
-yum -y install wget
-wget https://$origin.com/senjianlu/one-click-scripts/raw/main/mirror/Shadowsocks/shadowsocks.tar.gz
+shadowsocks_tar_gz_url=https://$origin.com/senjianlu/one-click-scripts/raw/main/mirror/Shadowsocks/shadowsocks.tar.gz
+if [[ ${origin} == *"github"* ]];
+then
+    yum -y install wget
+    wget $shadowsocks_tar_gz_url
+else
+    curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%8B%E8%BD%BD%20Gitee%20%E8%B6%85%E8%BF%87%201m%20%E5%A4%A7%E5%B0%8F%E7%9A%84%E6%96%87%E4%BB%B6/download.sh | bash -s $shadowsocks_tar_gz_url
 tar -zxvf shadowsocks.tar.gz
 mv shadowsocks $install_path
 
