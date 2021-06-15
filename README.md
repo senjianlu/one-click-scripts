@@ -31,6 +31,11 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%8B%E8%BD%BD%20Gitee%20%E8%B6%85%E8%BF%87%201m%20%E5%A4%A7%E5%B0%8F%E7%9A%84%E6%96%87%E4%BB%B6/download.sh | bash -s $gitee_file_url
 ```
 
+#### CentOS7 下一键安装 GOST 隧道中转并配置
+```bash
+wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
+```
+
 >测试代理
 ```bash
 curl -x http://111:222@173.107.210.99:333 http://ip-api.com/json/?lang=zh-CN  
