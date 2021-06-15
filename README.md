@@ -33,7 +33,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%
 
 #### CentOS7 下一键安装 GOST 隧道中转并配置
 ```bash
-wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
+wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/senjianlu/one-click-scripts/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20GOST%20%E9%9A%A7%E9%81%93%E4%B8%AD%E8%BD%AC%E5%B9%B6%E9%85%8D%E7%BD%AE/gost.sh && chmod +x gost.sh && ./gost.sh
 ```
 
 >测试代理
