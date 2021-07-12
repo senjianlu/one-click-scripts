@@ -1,6 +1,11 @@
 # one-click-scripts
 自用一键脚本
 
+#### CentOS7 下一键开启防火墙指定端口
+```bash
+curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%BC%80%E5%90%AF%E9%98%B2%E7%81%AB%E5%A2%99%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3/open-port.sh | bash -s $port
+```
+
 #### CentOS7 下一键安装 Nginx 反代指定网站
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Nginx%20%E5%8F%8D%E4%BB%A3%E6%8C%87%E5%AE%9A%E7%BD%91%E7%AB%99/install.sh | bash -s $nginx_reverse_port $nginx_reverse_domain_my $nginx_reverse_domain_it
@@ -38,6 +43,6 @@ wget --no-check-certificate -O gost.sh https://gitee.com/senjianlu/one-click-scr
 
 >测试代理
 ```bash
-curl -x http://111:222@173.107.210.99:333 http://ip-api.com/json/?lang=zh-CN  
-curl -x socks5://444:555@173.107.210.99:666 http://ip-api.com/json/?lang=zh-CN  
+curl -x http://$username:$password@$host:$port http://ip-api.com/json/?lang=zh-CN  
+curl -x socks5://$username:$password@$host:$port http://ip-api.com/json/?lang=zh-CN  
 ```
