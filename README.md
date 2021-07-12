@@ -41,6 +41,11 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%
 wget --no-check-certificate -O gost.sh https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20GOST%20%E9%9A%A7%E9%81%93%E4%B8%AD%E8%BD%AC%E5%B9%B6%E9%85%8D%E7%BD%AE/gost.sh && chmod +x gost.sh && ./gost.sh
 ```
 
+#### CentOS7 下一键安装 libsodium 加密库
+```bash
+curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20libsodium%20%E5%8A%A0%E5%AF%86%E5%BA%93/install.sh && bash
+```
+
 >测试代理
 ```bash
 curl -x http://$username:$password@$host:$port http://ip-api.com/json/?lang=zh-CN  
