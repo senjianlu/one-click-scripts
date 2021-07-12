@@ -43,7 +43,7 @@ wget --no-check-certificate -O gost.sh https://gitee.com/senjianlu/one-click-scr
 
 #### CentOS7 下一键安装 libsodium 加密库
 ```bash
-curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20libsodium%20%E5%8A%A0%E5%AF%86%E5%BA%93/install.sh && bash
+curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20libsodium%20%E5%8A%A0%E5%AF%86%E5%BA%93/install.sh | bash
 ```
 
 >测试代理
