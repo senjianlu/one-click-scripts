@@ -45,9 +45,9 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%8B%E8%BD%BD%20Gitee%20%E8%B6%85%E8%BF%87%201%20MB%20%E5%A4%A7%E5%B0%8F%E7%9A%84%E6%96%87%E4%BB%B6/download.sh | bash -s $gitee_file_url
 ```
 
-#### CentOS7 下一键安装 GOST 隧道中转并配置
+#### CentOS7 下一键安装 GOST 并启动 HTTP 和 SOCKS5 代理服务
 ```bash
-wget --no-check-certificate -O gost.sh https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20GOST%20%E9%9A%A7%E9%81%93%E4%B8%AD%E8%BD%AC%E5%B9%B6%E9%85%8D%E7%BD%AE/gost.sh && chmod +x gost.sh && ./gost.sh
+curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20GOST%20%E5%B9%B6%E5%90%AF%E5%8A%A8%20HTTP%20%E5%92%8C%20SOCKS5%20%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1/install.sh | bash -s $proxy_port $proxy_username $proxy_password
 ```
 
 #### CentOS7 下一键安装 libsodium 加密库
