@@ -24,7 +24,7 @@ dns:
 proxies:
   - name: "vmess"
     type: vmess
-    server: {server]
+    server: {server}
     port: {port}
     uuid: {uuid}
     alterId: {alterId}
