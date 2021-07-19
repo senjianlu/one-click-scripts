@@ -1,5 +1,5 @@
 port: 7890
-socks-port: 1080
+socks-port: {socks_port}
 redir-port: 7892
 allow-lan: true
 
@@ -29,7 +29,7 @@ proxies:
     uuid: {uuid}
     alterId: {alterId}
     cipher: auto
-    # network: ws
+    network: {network}
 rules:
   - DOMAIN-SUFFIX,google.com,vmess
   - DOMAIN-KEYWORD,google,vmess
