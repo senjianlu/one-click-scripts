@@ -4,7 +4,7 @@
 方便自己开发和生产环境中的环境部署。  
 
 ## 优势
-安装包都在 mirror 目录下拥有备份即使原仓库删除对脚本也不会产生影响，同时在 [GitHub](https://github.com/senjianlu/tiny-server-probe) 和 [Gitee](https://gitee.com/senjianlu/one-click-scripts) 都拥有仓库，境内服务器安装会优先从 Gitee 仓库下载。  
+安装包都在 /mirror 目录下拥有备份即使原仓库删除对脚本也不会产生影响，同时在 [GitHub](https://github.com/senjianlu/tiny-server-probe) 和 [Gitee](https://gitee.com/senjianlu/one-click-scripts) 都拥有仓库，境内服务器安装会优先从 Gitee 仓库下载。  
 
 ## 注意
 Fork 本仓库后请在你自己的仓库 Settings → Secrets 处添加你 Gitee 仓库的 $GITEE_TOKEN 和 $SSH_PRIVATE_KEY，并将 [.github/workflows/sync.yml](https://github.com/senjianlu/one-click-scripts/blob/main/.github/workflows/sync.yml) 的第 [37](https://github.com/senjianlu/one-click-scripts/blob/main/.github/workflows/sync.yml#L37) 行和第 [39](https://github.com/senjianlu/one-click-scripts/blob/main/.github/workflows/sync.yml#L39) 行修改为你的仓库地址。  
