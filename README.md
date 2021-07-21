@@ -57,7 +57,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%
 
 #### CentOS7 下一键安装 Zabbix Agent 端
 ```bash
-curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Zabbix%20Agent%20%E7%AB%AF/install.sh | bash $server_host $agent_host_name
+curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Zabbix%20Agent%20%E7%AB%AF/install.sh | bash -s $server_host $agent_host_name
 ```
 
 >测试代理
