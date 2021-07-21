@@ -16,9 +16,9 @@ wget https://$origin.com/senjianlu/one-click-scripts/raw/main/mirror/Zabbix/Agen
 yum -y install zabbix-agent-4.0.9-3.el7.x86_64.rpm
 
 # 更改配置文件
-sed -i "s/Hostname=Agent Server/Hostname=$agent_host_name" /etc/zabbix/zabbix_agentd.conf
-sed -i "s/Server=127.0.0.1/Hostname=$server_host" /etc/zabbix/zabbix_agentd.conf
-sed -i "s/ServerActive=127.0.0.1/Hostname=$server_host" /etc/zabbix/zabbix_agentd.conf
+sed -i "98c Server=$server_host" /etc/zabbix/zabbix_agentd.conf
+sed -i "139c ServerActive=$server_host" /etc/zabbix/zabbix_agentd.conf
+sed -i "150c Hostname=$agent_host_name" /etc/zabbix/zabbix_agentd.conf
 
 # 开机启动
 systemctl enable zabbix-agent.service
