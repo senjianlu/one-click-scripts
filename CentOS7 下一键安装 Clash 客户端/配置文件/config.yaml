@@ -30,6 +30,8 @@ proxies:
     alterId: {alterId}
     cipher: auto
     network: {network}
+    ws-path: {ws_path}
+    tls: {tls}
 rules:
   - DOMAIN-SUFFIX,google.com,vmess
   - DOMAIN-KEYWORD,google,vmess
