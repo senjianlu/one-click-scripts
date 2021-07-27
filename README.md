@@ -35,6 +35,11 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Shadowsocks%20%E5%AE%A2%E6%88%B7%E7%AB%AF/install.sh | bash
 ```
 
+#### CentOS7 下一键安装 Shadowsocks-libev 客户端（使用 SS 节点并支持 chacha20-ietf-poly1305 加密）
+```bash
+curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Shadowsocks-libev%20%E5%AE%A2%E6%88%B7%E7%AB%AF%EF%BC%88%E4%BD%BF%E7%94%A8%20SS%20%E8%8A%82%E7%82%B9%E5%B9%B6%E6%94%AF%E6%8C%81%20chacha20-ietf-poly1305%20%E5%8A%A0%E5%AF%86%EF%BC%89/install.sh | bash
+```
+
 #### CentOS7 下一键安装 Tinyproxy 代理
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Tinyproxy%20%E4%BB%A3%E7%90%86/install.sh | bash -s $tinyproxy_port $tinyproxy_username $tinyproxy_password
@@ -58,6 +63,11 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%
 #### CentOS7 下一键安装 Zabbix Agent 端
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Zabbix%20Agent%20%E7%AB%AF/install.sh | bash -s $server_host $agent_host_name
+```
+
+#### CentOS7 下一键为 OpenVZ  架构服务器添加 SWaP 分区
+```bash
+curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E4%B8%BA%20OpenVZ%20%20%E6%9E%B6%E6%9E%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B7%BB%E5%8A%A0%20SWaP%20%E5%88%86%E5%8C%BA/add.sh | bash
 ```
 
 >测试代理
