@@ -4,7 +4,7 @@
 方便自己开发和生产环境中的环境部署。  
 
 ## 优势
-安装包都在 /mirror 目录下拥有备份即使原仓库删除对脚本也不会产生影响，同时在 [GitHub](https://github.com/senjianlu/tiny-server-probe) 和 [Gitee](https://gitee.com/senjianlu/one-click-scripts) 都拥有仓库，境内服务器安装会优先从 Gitee 仓库下载。  
+安装包都在 /mirror 目录下拥有备份即使原仓库删除对脚本也不会产生影响，同时在 [GitHub](https://github.com/senjianlu/one-click-scripts) 和 [Gitee](https://gitee.com/senjianlu/one-click-scripts) 都拥有仓库，境内服务器安装会优先从 Gitee 仓库下载。  
 
 ## 注意
 Fork 本仓库后请在你自己的仓库 Settings → Secrets 处添加你 Gitee 仓库的 $GITEE_TOKEN 和 $SSH_PRIVATE_KEY，并将 [.github/workflows/sync.yml](https://github.com/senjianlu/one-click-scripts/blob/main/.github/workflows/sync.yml) 的第 [37](https://github.com/senjianlu/one-click-scripts/blob/main/.github/workflows/sync.yml#L37) 行和第 [39](https://github.com/senjianlu/one-click-scripts/blob/main/.github/workflows/sync.yml#L39) 行修改为你的仓库地址。  
@@ -68,6 +68,11 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%
 #### CentOS7 下一键为 OpenVZ  架构服务器添加 SWaP 分区
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E4%B8%BA%20OpenVZ%20%20%E6%9E%B6%E6%9E%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B7%BB%E5%8A%A0%20SWaP%20%E5%88%86%E5%8C%BA/add.sh | bash
+```
+
+#### CentOS7 下一键安装 Chrome 和 chromedriver
+```bash
+curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20%E4%B8%8B%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%20Chrome%20%E5%92%8C%20chromedriver/install.sh | bash
 ```
 
 >测试代理

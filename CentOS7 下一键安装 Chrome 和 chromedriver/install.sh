@@ -19,7 +19,7 @@ fi
 yum -y localinstall google-chrome-stable_current_x86_64.rpm
 
 # 解压并将 chromedriver 移至 /usr/bin 目录下以在任意目录都能调用
-yum install -y unzip zip
+yum -y install unzip zip
 unzip chromedriver_linux64.zip
 mv chromedriver /usr/bin/
 
