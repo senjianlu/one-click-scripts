@@ -1,5 +1,5 @@
 port: 7890
-socks-port: {socks_port}
+socks-port: {socks-port}
 redir-port: 7892
 allow-lan: true
 
