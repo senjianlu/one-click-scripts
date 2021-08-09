@@ -1,5 +1,5 @@
 port: 7890
-socks-port: {socks_port}
+socks-port: {socks-port}
 redir-port: 7892
 allow-lan: true
 
@@ -24,6 +24,6 @@ dns:
 proxies:
   - name:
 rules:
-  - DOMAIN-SUFFIX,google.com,vmess
-  - DOMAIN-KEYWORD,google,vmess
-  - MATCH,vmess
+  - DOMAIN-SUFFIX,google.com,ssr
+  - DOMAIN-KEYWORD,google,ssr
+  - MATCH,ssr

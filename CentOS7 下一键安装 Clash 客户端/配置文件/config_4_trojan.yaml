@@ -1,5 +1,5 @@
 port: 7890
-socks-port: {socks_port}
+socks-port: {socks-port}
 redir-port: 7892
 allow-lan: true
 
@@ -22,17 +22,7 @@ dns:
    - 'tls://dns.google'
    - 'tls://dns.rubyfish.cn:853'
 proxies:
-  - name: "trojan"
-    type: trojan
-    server: {server}
-    port: {port}
-    password: {password}
-    udp: {udp}
-    sni: {sni}
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: {skip_cert_verify}
+  - name:
 rules:
   - DOMAIN-SUFFIX,google.com,trojan
   - DOMAIN-KEYWORD,google,trojan

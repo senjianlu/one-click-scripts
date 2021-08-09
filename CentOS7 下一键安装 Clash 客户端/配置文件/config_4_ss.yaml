@@ -1,5 +1,5 @@
 port: 7890
-socks-port: {socks_port}
+socks-port: {socks-port}
 redir-port: 7892
 allow-lan: true
 
@@ -22,13 +22,7 @@ dns:
    - 'tls://dns.google'
    - 'tls://dns.rubyfish.cn:853'
 proxies:
-  - name: "ss"
-    type: ss
-    server: {server}
-    port: {port}
-    cipher: {cipher}
-    password: {password}
-    udp: {udp}
+  - name:
 rules:
   - DOMAIN-SUFFIX,google.com,ss
   - DOMAIN-KEYWORD,google,ss
