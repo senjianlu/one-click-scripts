@@ -44,6 +44,7 @@ then
 else
     echo "安装成功！开始删除 Python3 安装所用的文件......"
     # 删除 Python3 压缩包和解压出的文件夹
+    cd ..
     rm -f Python-$version.tgz
     rm -rf Python-$version
     PATH=$PATH:/usr/bin/python3
