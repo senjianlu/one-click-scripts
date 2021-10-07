@@ -1,4 +1,4 @@
 #!/bin/bash
 # gost start
 
-nohup gost -L :1081 -F=$1 >/dev/null 2>&1 &
+nohup gost -L :$1 -F=$2 >/dev/null 2>&1 &
