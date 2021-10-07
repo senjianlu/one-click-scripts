@@ -24,9 +24,16 @@ gunzip gost-linux-amd64-2.11.1.gz
 mv gost-linux-amd64-2.11.1 /usr/bin/gost
 chmod 777 /usr/bin/gost
 
-# 开启开机自启动
-echo "@reboot gost -L $2:$3@:$1" >> /var/spool/cron/root
-service crond restart
+# 如果没有传入参数则完成，否则进行启动
+if  [ ! "$proxy_port" ] ;
+then
+    echo "GOST 安装完成！"
+else
+    # 开启开机自启动
+    echo "@reboot gost -L $2:$3@:$1" >> /var/spool/cron/root
+    service crond restart
 
-# nohup 启动在后台
-nohup gost -L $2:$3@:$1 &
+    # nohup 启动在后台
+    nohup gost -L $2:$3@:$1 &
+    echo "GOST 安装并启动成功！"
+fi
