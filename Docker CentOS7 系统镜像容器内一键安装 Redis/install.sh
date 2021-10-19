@@ -18,6 +18,23 @@ tar xzf redis-6.2.6.tar.gz
 cd redis-6.2.6
 make && make install
 
+# 创建初始化脚本
+cp utils/redis_init_script /etc/init.d/redis_6379
+
+# 创建 Redis 持久化文件存放目录
+mkdir -p /var/redis/6379
+
+# Redis 配置文件，文件目录为：/etc/redis/端口号.conf（除了持久化文件目录外所有路径均为 redis_init_script 官方初始化脚本中的默认路径）
+mkdir /etc/redis
+mv redis.conf /etc/redis/6379.conf
+# 在后台以守护进程模式运行
+sed -i 's/daemonize no/daemonize yes/;' /etc/redis/6379.conf
+# 修改持久化目录
+sed -i 's#dir ./#dir /var/redis/6379#;' /etc/redis/6379.conf
+
 # 删除压缩包
 cd ..
 rm -rf redis-6.2.6.tar.gz
+
+# 启动 Redis（默认不直接启动，请自行在 Dockerfile 中添加启动命令）
+# /etc/init.d/redis_6379 start
