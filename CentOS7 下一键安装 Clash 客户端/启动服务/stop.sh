@@ -1,4 +1,4 @@
 #!/bin/bash
-# clash stop
+# Clash 停止脚本
 
 kill -9 $(pgrep -f 'clash')
