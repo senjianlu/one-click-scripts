@@ -100,4 +100,4 @@ start_gost_command=$start_gost_command" >/dev/null 2>&1 &"
 # 最终命令
 echo "GOST 启动命令："$start_gost_command
 
-exec $start_gost_command
+$start_gost_command &
