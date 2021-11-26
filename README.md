@@ -111,6 +111,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下下�
 | 参数 | 说明 | 样例 |  
 | --- | ---- | --- |  
 | gitee_file_url | 【必填】Gitee 仓库中文件的下载链接。 | https://gitee.com/senjianlu/one-click-scripts/raw/main/mirror/Python/3/Python-3.8.2.tgz |  
+
 3、备注：
 + 文件会被下载至当前目录下
 ***
