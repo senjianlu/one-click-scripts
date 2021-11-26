@@ -38,7 +38,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 | nginx_reverse_port | 【必填】你域名的端口。 | 80 |  
 | nginx_reverse_domain_my | 【必填】你的域名。 | my_web.com |  
 | nginx_reverse_domain_it | 【必填】目标域名。 | its_web.com |  
-***
+
 3、备注：
 + Nginx 配置文件所在目录：/etc/nginx/nginx.conf
 ***
@@ -97,6 +97,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 | tinyproxy_port | 【必填】HTTP 代理服务所在端口。 | 1081 |  
 | tinyproxy_username | 【必填】HTTP 代理认证用户名。 | my_user |  
 | tinyproxy_password | 【必填】HTTP 代理认证密码。 | my_pass |  
+
 3、备注：
 + Shadowsocks 客户端所在目录：/usr/local/share/tinyproxy-1.11.0-rc1
 ***
