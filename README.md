@@ -16,7 +16,7 @@
 **考虑到即使是同一脚本、各人使用的目的也可能不同，不再进行脚本归类，请 `Ctrl` + `F` 通过关键词查找。**
 ***
 
-### [CentOS7 下一键开启防火墙指定端口](https://github.com/senjianlu/one-click-scripts/blob/main/CentOS7%20下一键开启防火墙指定端口)  
+#### [CentOS7 下一键开启防火墙指定端口](https://github.com/senjianlu/one-click-scripts/blob/main/CentOS7%20下一键开启防火墙指定端口)  
 1、一键开启：  
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键开启防火墙指定端口/open-port.sh | bash -s $port
@@ -27,7 +27,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 | port | 【必填】开放的端口。 | 1080 |  
 ***
 
-### [CentOS7 下一键安装 Nginx 反代指定网站](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Nginx%20反代指定网站)
+#### [CentOS7 下一键安装 Nginx 反代指定网站](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Nginx%20反代指定网站)
 1、一键安装：  
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20Nginx%20反代指定网站/install.sh | bash -s $nginx_reverse_port $nginx_reverse_domain_my $nginx_reverse_domain_it
@@ -43,7 +43,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 + Nginx 配置文件所在目录：/etc/nginx/nginx.conf
 ***
 
-### [CentOS7 下一键安装 Python3 环境](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Python3%20环境)
+#### [CentOS7 下一键安装 Python3 环境](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Python3%20环境)
 1、一键安装：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20Python3%20环境/install.sh | bash
@@ -52,7 +52,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 + Python3 所在目录：/usr/local/python3
 ***
 
-### [CentOS7 下一键安装 SOCKS5 代理](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20SOCKS5%20代理)
+#### [CentOS7 下一键安装 SOCKS5 代理](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20SOCKS5%20代理)
 1、一键安装：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20SOCKS5%20代理/install.sh | bash -s $ss5_port $ss5_username $ss5_password
@@ -65,7 +65,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 | ss5_password | 【必填】SOCKS5 代理认证密码。 | my_pass |  
 ***
 
-### [CentOS7 下一键安装 Shadowsocks 客户端](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Shadowsocks%20客户端)
+#### [CentOS7 下一键安装 Shadowsocks 客户端](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Shadowsocks%20客户端)
 1、一键安装：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20Shadowsocks%20客户端/install.sh | bash
@@ -76,7 +76,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 + 控制脚本所在目录：/usr/local/bin/ssr
 ***
 
-### [CentOS7 下一键安装 Shadowsocks-libev 客户端（使用 SS 节点并支持 chacha20-ietf-poly1305 加密）](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Shadowsocks-libev%20客户端%EF%BC%88使用%20SS%20节点并支持%20chacha20-ietf-poly1305%20加密%EF%BC%89)
+#### [CentOS7 下一键安装 Shadowsocks-libev 客户端（使用 SS 节点并支持 chacha20-ietf-poly1305 加密）](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Shadowsocks-libev%20客户端%EF%BC%88使用%20SS%20节点并支持%20chacha20-ietf-poly1305%20加密%EF%BC%89)
 1、一键安装：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20Shadowsocks-libev%20客户端%EF%BC%88使用%20SS%20节点并支持%20chacha20-ietf-poly1305%20加密%EF%BC%89/install.sh | bash
@@ -86,7 +86,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 + ~~意义不明的脚本，我已经不记得用途了~~
 ***
 
-### [CentOS7 下一键安装 Tinyproxy 代理](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Tinyproxy%20代理)
+#### [CentOS7 下一键安装 Tinyproxy 代理](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Tinyproxy%20代理)
 1、一键安装：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20Tinyproxy%20代理/install.sh | bash -s $tinyproxy_port $tinyproxy_username $tinyproxy_password
@@ -101,7 +101,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 + Shadowsocks 客户端所在目录：/usr/local/share/tinyproxy-1.11.0-rc1
 ***
 
-### [CentOS7 下下载 Gitee 超过 1 MB 大小的文件](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下下载%20Gitee%20超过%201%20MB%20大小的文件)
+#### [CentOS7 下下载 Gitee 超过 1 MB 大小的文件](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下下载%20Gitee%20超过%201%20MB%20大小的文件)
 1、一键下载：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下下载%20Gitee%20超过%201%20MB%20大小的文件/download.sh | bash -s $gitee_file_url$gitee_file_url
@@ -114,7 +114,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下下�
 + 文件会被下载至当前目录下
 ***
 
-### [CentOS7 下一键安装 GOST 并启动 HTTP 和 SOCKS5 代理服务](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20GOST%20并启动%20HTTP%20和%20SOCKS5%20代理服务)
+#### [CentOS7 下一键安装 GOST 并启动 HTTP 和 SOCKS5 代理服务](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20GOST%20并启动%20HTTP%20和%20SOCKS5%20代理服务)
 1、一键安装：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20GOST%20并启动%20HTTP%20和%20SOCKS5%20代理服务/install.sh | bash -s $proxy_port $proxy_username $proxy_password
@@ -125,6 +125,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 | proxy_port | 【选填】HTTP&SOCKS5 代理服务共同所在端口。 | 1082 |  
 | proxy_username | 【选填】HTTP&SOCKS5 代理共同认证用户名。 | my_user |  
 | proxy_password | 【选填】HTTP&SOCKS5 代理共同认证密码。 | my_pass |  
+
 3、备注：
 + 3 个参数中只要有 1 个没有填写，GOST 服务就不会启动
 + GOST 安装完成后只有一个可执行文件，路径为：/usr/bin/gost
@@ -138,7 +139,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 > ```
 ***
 
-### [CentOS7 下一键安装 libsodium 加密库](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20libsodium%20加密库)
+#### [CentOS7 下一键安装 libsodium 加密库](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20libsodium%20加密库)
 1、一键安装：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20libsodium%20加密库/install.sh | bash
@@ -148,7 +149,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 + CentOS7 下你可以通过 `yum install libsodium libsodium-devel` 进行安装，而不需要使用本脚本
 ***
 
-### [CentOS7 下一键安装 Zabbix Agent 端](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Zabbix%20Agent%20端)
+#### [CentOS7 下一键安装 Zabbix Agent 端](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Zabbix%20Agent%20端)
 1、一键安装：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20Zabbix%20Agent%20端/install.sh | bash -s $server_host $agent_host_name
@@ -160,7 +161,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 | agent_host_name | 【必填】该 Agent 节点的名字。 | test_node_01 | 
 ***
 
-### [CentOS7 下一键为 OpenVZ  架构服务器添加 SWaP 分区](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键为%20OpenVZ%20%20架构服务器添加%20SWaP%20分区)
+#### [CentOS7 下一键为 OpenVZ  架构服务器添加 SWaP 分区](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键为%20OpenVZ%20%20架构服务器添加%20SWaP%20分区)
 1、一键添加：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键为%20OpenVZ%20%20架构服务器添加%20SWaP%20分区/add.sh | bash
@@ -169,7 +170,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 + 最大添加 512MB 内存
 ***
 
-### [CentOS7 下一键安装 Chrome 和 chromedriver](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Chrome%20和%20chromedriver)
+#### [CentOS7 下一键安装 Chrome 和 chromedriver](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Chrome%20和%20chromedriver)
 1、一键安装：
 ```bash
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20Chrome%20和%20chromedriver/install.sh | bash
