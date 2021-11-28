@@ -65,6 +65,17 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 | ss5_password | 【必填】SOCKS5 代理认证密码。 | my_pass |  
 ***
 
+#### [CentOS7 下一键安装 Clash 客户端](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Clash%20客户端)
+1、一键安装：
+```bash
+curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键安装%20Clash%20客户端/install.sh | bash
+```
+2、备注：
++ Clash 安装完成后只有一个可执行文件，路径为：/usr/local/bin/clash
++ 在第一次运行时，会在 ~/.config/clash/ 目录下创建 config.yaml 和 Country.mmdb 这两个默认使用的配置文件
++ 通过在运行时添加 `-f $config_file_path` 参数，你可以指定 Clash 使用哪个配置文件
+***
+
 #### [CentOS7 下一键安装 Shadowsocks 客户端](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Shadowsocks%20客户端)
 1、一键安装：
 ```bash
@@ -169,7 +180,7 @@ curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一�
 curl -s https://gitee.com/senjianlu/one-click-scripts/raw/main/CentOS7%20下一键为%20OpenVZ%20%20架构服务器添加%20SWaP%20分区/add.sh | bash
 ```
 2、备注：
-+ 最大添加 512MB 内存
++ 最大添加 512 MB 内存
 ***
 
 #### [CentOS7 下一键安装 Chrome 和 chromedriver](https://github.com/senjianlu/one-click-scripts/tree/main/CentOS7%20下一键安装%20Chrome%20和%20chromedriver)
