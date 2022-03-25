@@ -20,6 +20,7 @@ yum -y install libffi libffi-devel
 yum -y install zlib* libffi-devel
 yum -y install gcc* glien*
 yum -y install glibc-headers
+yum -y install openssl*
 # 下载、解压和安装
 python_tgz_url=https://$origin.com/senjianlu/one-click-scripts/raw/main/mirror/Python/3/Python-$version.tgz
 if [[ ${origin} == *"github"* ]];
